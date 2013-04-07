@@ -1,4 +1,4 @@
-
+{# Ecc12PRHomeBundle::base.html.twig #}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,12 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/theme.css">
+    {% stylesheets
+        "bundles/ecc12prhome/css/bootstrap.css" filter="yui_css"
+        "bundles/ecc12prhome/css/font-awesome.css" filter="cssrewrite,yui_css"
+        "bundles/ecc12prhome/css/theme.css" filter="cssrewrite,yui_css"
+    %}
+    <link rel="stylesheet" href="{{ asset_url }}">
+    {% endstylesheets %}
     <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Patua+One'>
     <!--[if lt IE 9]>
-    <link rel="stylesheet" href="css/font-awesome-ie7.css">
+    {% stylesheets "bundles/ecc12prhome/css/font-awesome-ie7.css" filter="yui_css" %}
+    <link rel="stylesheet" href="{{ asset_url }}">
+    {% endstylesheets %}
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <link rel="shortcut icon" href="favicon.ico">
@@ -25,7 +31,7 @@
         <div class="row">
             <div class="span12">
                 <header class="js-animated">
-                    <img src="images/PR_Logo.png" alt="">
+                    <img src="{{ asset('bundles/ecc12prhome/images/PR_Logo.png') }}" alt="">
                     <!--<h1>New Sofistication Edges</h1>
                     <p class="description">- Modernity is the foundation of our future -</p>-->
                 </header>
@@ -47,6 +53,8 @@
 
 <!-- Page Container -->
 <div class="container">
+
+{% block body %}
 
     <!-- Features Grid-->
     <div class="row">
@@ -73,7 +81,7 @@
     <!-- Info Row 1 -->
     <div class="row">
         <div class="span3">
-            <img class="img-rounded" src="images/product-4.png" alt="">
+            <img class="img-rounded" src="{{ asset('bundles/ecc12prhome/images/product-4.png') }}" alt="">
         </div>
         <div class="span9">
             <h3>Brand New Features</h3>
@@ -98,7 +106,7 @@
             <a href="#" class="btn">Try The Demo</a>
         </div>
         <div class="span4">
-            <img class="img-rounded" src="images/product-3.png" alt="">
+            <img class="img-rounded" src="{{ asset('bundles/ecc12prhome/images/product-3.png') }}" alt="">
         </div>
     </div>
 
@@ -112,7 +120,7 @@
             <div class="bubble">
                 <p><i class="icon-comments-alt"></i> For every dollar my company invests to increase usability, I receives $10-$100 in benefits</p>
             </div>
-            <img class="user-avatar" src="images/user-1.png" alt="">
+            <img class="user-avatar" src="{{ asset('bundles/ecc12prhome/images/user-1.png') }}" alt="">
             <blockquote>
                 <p>Cooper Black</p>
                 <small>Chief CEO in <cite title="Source Title">Venture Corp.</cite></small>
@@ -124,7 +132,7 @@
             <div class="bubble">
                 <p><i class="icon-comments-alt"></i> Testing one user early in the project is better than testing 50 near the end.</p>
             </div>
-            <img class="user-avatar" src="images/user-2.png" alt="">
+            <img class="user-avatar" src="{{ asset('bundles/ecc12prhome/images/user-2.png') }}" alt="">
             <blockquote>
                 <p>Calisto MT</p>
                 <small>President in <cite title="Source Title">Asturias Inc.</cite></small>
@@ -136,7 +144,7 @@
             <div class="bubble">
                 <p><i class="icon-comments-alt"></i> The difference between zero and even a little bit of data is astounding.</p>
             </div>
-            <img class="user-avatar" src="images/user-3.png" alt="">
+            <img class="user-avatar" src="{{ asset('bundles/ecc12prhome/images/user-3.png') }}" alt="">
             <blockquote>
                 <p>Cambria Serif</p>
                 <small>Design Manager in <cite title="Source Title">Moldova Systems</cite></small>
@@ -150,16 +158,16 @@
     <div class="row">
         <div class="span12">
             <h3>Our Awesome Clients</h3>
-            <img class="customer-logo" src="images/logo-1.png" alt="">
-            <img class="customer-logo" src="images/logo-2.png" alt="">
-            <img class="customer-logo" src="images/logo-3.png" alt="">
-            <img class="customer-logo" src="images/logo-11.png" alt="">
-            <img class="customer-logo" src="images/logo-12.png" alt="">
-            <img class="customer-logo" src="images/logo-6.png" alt="">
-            <img class="customer-logo" src="images/logo-7.png" alt="">
-            <img class="customer-logo" src="images/logo-8.png" alt="">
-            <img class="customer-logo" src="images/logo-9.png" alt="">
-            <img class="customer-logo" src="images/logo-10.png" alt="">
+            <img class="customer-logo" src="{{ asset('bundles/ecc12prhome/images/logo-1.png') }}" alt="">
+            <img class="customer-logo" src="{{ asset('bundles/ecc12prhome/images/logo-2.png') }}" alt="">
+            <img class="customer-logo" src="{{ asset('bundles/ecc12prhome/images/logo-3.png') }}" alt="">
+            <img class="customer-logo" src="{{ asset('bundles/ecc12prhome/images/logo-11.png') }}" alt="">
+            <img class="customer-logo" src="{{ asset('bundles/ecc12prhome/images/logo-12.png') }}" alt="">
+            <img class="customer-logo" src="{{ asset('bundles/ecc12prhome/images/logo-6.png') }}" alt="">
+            <img class="customer-logo" src="{{ asset('bundles/ecc12prhome/images/logo-7.png') }}" alt="">
+            <img class="customer-logo" src="{{ asset('bundles/ecc12prhome/images/logo-8.png') }}" alt="">
+            <img class="customer-logo" src="{{ asset('bundles/ecc12prhome/images/logo-9.png') }}" alt="">
+            <img class="customer-logo" src="{{ asset('bundles/ecc12prhome/images/logo-10.png') }}" alt="">
         </div>
     </div>
 
@@ -244,6 +252,8 @@
         </div><!-- /.span6 -->
     </div><!-- /.row -->
 
+{% endblock %}
+
     <hr>
 
 </div><!-- page /.container -->
@@ -260,8 +270,8 @@
 </footer>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-1.8.2.min.js"><\/script>')</script>
-<script src="js/bootstrap.min.js"></script>
+<script>window.jQuery || document.write('<script src="{{ asset('bundles/ecc12prhome/js/jquery-1.8.2.min.js') }}"><\/script>')</script>
+<script src="{{ asset('bundles/ecc12prhome/js/bootstrap.min.js') }}"></script>
 <script>
     $(document).ready(function(){
         // fancy animation - fade out header content on page scroll
