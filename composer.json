@@ -1,0 +1,11 @@
+{
+    "name": "ecc12/pr_home_bundle",
+    "description": "member's home for park row",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Cameron King",
+            "email": "cking@ecc12.com"
+        }
+    ]
+}
