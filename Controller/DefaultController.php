@@ -5,7 +5,12 @@ namespace Ecc12\PRHomeBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Cache;
 
+/**
+ * Class DefaultController
+ * @Cache(expires="tomorrow")
+ */
 class DefaultController extends Controller
 {
     /**
