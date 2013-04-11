@@ -2,10 +2,57 @@
 {% extends 'Ecc12PRHomeBundle::base.html.twig' %}
 
 {% block body %}
-    <div class="row">
-        <div class="span12">
-            <pre>{{ directory_text }}</pre>
+    {% for family_id,family in directory %}
+        <div class="row">
+            <div class="span12">
+                <h2>Family {{ family['name'] }}</h2>
+
+                {% if family['address_1'] and family['city'] and family['state'] %}
+                    {{ family['address_1'] }}<br />
+                    {% if family['address_2'] %}
+                        {{ family['address_2'] }}<br />
+                    {% endif %}
+                    {{ family['city'] }}, {{ family['state'] }}
+                    {% if family['zipcode'] %}
+                        {{ family['zipcode'] }}
+                    {% endif %}<br />
+                    <br />
+                {% endif %}
+                {% if family['phone'] %}
+                    Family Phone: {{ family['phone'] }}<br />
+                {% endif %}
+                {% if family['email'] %}
+                    Family Email: {{ family['email'] }}<br />
+                {% endif %}
+
+            </div>
         </div>
+        <div class="row">
+            {% for person_id,person in family['people'] %}
+                <div class="span3">
+
+                    <h4>{{ person['first_name']|default('') }} {{ person['last_name']|default('') }}</h4>
+
+                    {% if person['phone'] %}
+                        Phone: {{ person['phone'] }}<br />
+                    {% endif %}
+                    {% if person['email'] %}
+                        Email: <a href="mailto:{{ person['email'] }}">{{ person['email'] }}</a><br />
+                    {% endif %}
+                    {% if person['birthday'] %}
+                        Birthday: {{ person['birthday']|date('M d') }}<br />
+                    {% endif %}
+                    {% if person['anniversary'] %}
+                        Anniversary: {{ person['anniversary']|date('M d') }}<br />
+                    {% endif %}
+
+                </div>
+            {% endfor %}
+        </div>
+
+        <hr />
     </div>
+
+    {% endfor %}
 {% endblock %}
 
