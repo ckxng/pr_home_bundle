@@ -6,50 +6,70 @@
     <title>Edge - Modern Bootstrap Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="{">
+
     {% stylesheets
-        "bundles/ecc12prhome/css/bootstrap.css" filter="yui_css"
+        "bundles/ecc12prhome/css/bootstrap.min.css"
         "bundles/ecc12prhome/css/font-awesome.css" filter="cssrewrite,yui_css"
         "bundles/ecc12prhome/css/theme.css" filter="cssrewrite,yui_css"
     %}
-    <link rel="stylesheet" href="{{ asset_url }}">
+        <link rel="stylesheet" href="{{ asset_url }}">
     {% endstylesheets %}
+
     <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Patua+One'>
+
     <!--[if lt IE 9]>
     {% stylesheets "bundles/ecc12prhome/css/font-awesome-ie7.css" filter="yui_css" %}
-    <link rel="stylesheet" href="{{ asset_url }}">
+        <link rel="stylesheet" href="{{ asset_url }}">
     {% endstylesheets %}
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
     <link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <body>
-<!-- Showcase -->
-<div class="showcase">
-    <div class="container">
-        <div class="row">
-            <div class="span12">
-                <header class="js-animated">
-                    <img src="{{ asset('bundles/ecc12prhome/images/PR_Logo.png') }}" alt="">
-                    <!--<h1>New Sofistication Edges</h1>
-                    <p class="description">- Modernity is the foundation of our future -</p>-->
-                </header>
-            </div>
-        </div>
+
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <a class="brand" href="{{ url('index') }}">
+            <i class="icon-home"></i> PR</a>
+        <ul class="nav">
+            <li><a href="{{ url('hello') }}">Hello</a></li>
+            <li><a href="{{ url('hello', {'name': 'Friend'}) }}">Friend</a></li>
+            <li><a href="{{ asset('hello/Friend') }}">Hello</a></li>
+            <li><a href="{{ asset('hello/Friend') }}">Hello</a></li>
+        </ul>
     </div>
 </div>
 
-<!-- Call to Action Strip -->
+{% block showcase %}
+    <div class="showcase">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    {% block showcasecontent %}
+                        <h4><i class="icon-home"></i> Park Row Church of Christ</h4>
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block actionstrip %}
 <section class="strip">
     <div class="container">
         <div class="row">
             <div class="span12">
-                <h3>You better be ready to say goodbye to content chaos <a class="btn" href="#">Learn More <i class="icon icon-caret-right"></i></a></h3>
+                {% block actioncontent %}
+                {% endblock %}
             </div>
         </div>
     </div>
 </section>
+{% endblock %}
 
 <!-- Page Container -->
 <div class="container">
@@ -263,7 +283,17 @@
         <div class="row">
             <div class="span12">
                 <p class="pull-right"><a href="#">Back to top</a></p>
-                <p>%%%FOOTER%%%</p>
+                {% block footer %}
+                    Copyright ©2013. Park Row Church of Christ.<br />
+                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4MQ5TLUVMDQ24">
+                        Donate with PayPal</a> |
+                    <a href="http://parkrow.net/media-request/">Media Request</a> |
+                    <a href="http://pr3.parkrow.net/pr3/user">Login</a> |
+                    <a href="https://parkrow.fellowshipone.com/">DB</a> |
+                    <a href="http://status.parkrow.net/">Status</a> |
+                    <a href="http://cgi.parkrow.net/directory/directory.cgi">Office Tools</a> |
+                    <a href="http://cam.parkrow.net:90/">Camera</a>
+                {% endblock %}
             </div>
         </div>
     </div>
@@ -287,5 +317,8 @@
         $('[rel="tooltip"]').tooltip();
     });
 </script>
+
+{% block pagebottom %}{% endblock %}
+
 </body>
 </html>

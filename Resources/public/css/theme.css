@@ -5,6 +5,24 @@
 */
 
 /*------------------------------------*\
+  $Override Bootstrap
+\*------------------------------------*/
+
+.navbar-fixed-top {
+    margin-bottom: 0px;
+}
+
+@media (min-width: 980px) {
+    body {
+        padding-top: 40px;
+    }
+}
+.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*------------------------------------*\
   $Global Styles
 \*------------------------------------*/
 
@@ -50,8 +68,11 @@ hr {
   background-size: cover;
 }
 header {
-  padding: 60px 10px 100px;
+  padding: 40px 10px 60px;
   text-align: center;
+}
+.header-title {
+    color: rgb(0, 97, 23);
 }
 .description {
   font-family: "Times New Roman", Times, serif;
