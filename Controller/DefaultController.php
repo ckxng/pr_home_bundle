@@ -32,7 +32,8 @@ class DefaultController extends Controller
      */
     public function directoryAction($family_id)
     {
-        return array("file_path" => $this->get('kernel')->
-            locateResource("@Ecc12PRHomeBundle/Resources/private/directory.xml"));
+        return array("directory_text" => print_r(simplexml_load_file(
+            $this->get('kernel')->locateResource("@Ecc12PRHomeBundle/Resources/private/directory.xml")),
+            true));
     }
 }
