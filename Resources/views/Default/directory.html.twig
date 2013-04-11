@@ -2,11 +2,22 @@
 {% extends 'Ecc12PRHomeBundle::base.html.twig' %}
 
 {% block body %}
+    {% set first_family = 1 %}
     {% for family_id,family in directory %}
+
+        {% if first_family %}
+            {% set first_family = 0 %}
+        {% else %}
+            <hr />
+        {% endif %}
+
         <div class="row">
             <div class="span12">
-                <h2>Family {{ family['name'] }}</h2>
-
+                <h2>{{ family['name'] }} Family</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span3">
                 {% if family['address_1'] and family['city'] and family['state'] %}
                     {{ family['address_1'] }}<br />
                     {% if family['address_2'] %}
@@ -18,20 +29,31 @@
                     {% endif %}<br />
                     <br />
                 {% endif %}
+            </div>
+            <div class="span9">
                 {% if family['phone'] %}
                     Family Phone: {{ family['phone'] }}<br />
                 {% endif %}
                 {% if family['email'] %}
-                    Family Email: {{ family['email'] }}<br />
+                    Family Email: <a href="{{ family['email'] }}">{{ family['email'] }}</a><br />
                 {% endif %}
-
             </div>
         </div>
         <div class="row">
+            {% set i = 0 %}
             {% for person_id,person in family['people'] %}
+
                 <div class="span3">
 
-                    <h4>{{ person['first_name']|default('') }} {{ person['last_name']|default('') }}</h4>
+                    <h4>
+                        {% if person['relationship'] == 'Child' %}
+                            <em>{{ person['first_name']|default('') }}
+                                {{ person['last_name']|default('') }}</em>
+                        {% else %}
+                            {{ person['first_name']|default('') }}
+                            {{ person['last_name']|default('') }}
+                        {% endif %}
+                    </h4>
 
                     {% if person['phone'] %}
                         Phone: {{ person['phone'] }}<br />
@@ -47,10 +69,13 @@
                     {% endif %}
 
                 </div>
+                {% set i = i + 1 %}
+                {% if i == 4 %}
+                    </div><div class="row">
+                    {% set i = 0 %}
+                {% endif %}
             {% endfor %}
         </div>
-
-        <hr />
 
     {% endfor %}
 {% endblock %}
