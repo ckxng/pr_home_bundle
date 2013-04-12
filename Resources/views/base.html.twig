@@ -40,8 +40,13 @@
             <li><a href="{{ url('hello', {'name': 'Friend'}) }}">Friend</a></li>
             <li><a href="{{ url('directory') }}">Directory</a></li>
             <li><a href="{{ url('directory_list') }}">List</a></li>
-            <li><a href="{{ url('login') }}">Login</a></li>
-            <li><a href="{{ url('logout') }}">Logout</a></li>
+            {%  if is_granted('ROLE_USER') %}
+                <li><a href="{{ url('logout') }}">Logout
+                        {{ app.security.getToken().getUser().getUsername() }}</a></li>
+            {% else %}
+                <li><a href="{{ url('login') }}">Login</a></li>
+            {% endif %}
+
         </ul>
     </div>
 </div>
