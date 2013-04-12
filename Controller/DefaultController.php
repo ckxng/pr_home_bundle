@@ -18,7 +18,6 @@ use Ecc12\PRHomeStoreBundle\Document\Person;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/", name="index")
      * @Template()
      */
     public function indexAction()
@@ -27,12 +26,25 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/hello/{in_name}", name = "hello", defaults={"in_name" = "Friend"})
      * @Template()
      */
     public function helloAction($in_name)
     {
         return array('name' => $in_name);
+    }
+
+    /**
+     * @Route("/", name="index", defaults={"in_page_name" = "index"})
+     * @Route("/page/{in_page_name}", name = "page", defaults={"in_page_name" = "index"})
+     * @Template()
+     */
+    public function pageAction($in_page_name) {
+        $content = "Page not found";
+        $filename = __DIR__."/../Resources/private/page/$in_page_name.md";
+        if(file_exists($filename)) {
+            $content = file_get_contents($filename);
+        }
+        return array('content' => $content);
     }
 
     /**

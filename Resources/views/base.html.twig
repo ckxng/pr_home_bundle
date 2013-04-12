@@ -36,10 +36,10 @@
         <a class="brand" href="{{ url('index') }}">
             <i class="icon-home"></i> PR</a>
         <ul class="nav">
-            <li><a href="{{ url('hello') }}">Hello</a></li>
-            <li><a href="{{ url('hello', {'name': 'Friend'}) }}">Friend</a></li>
+            <li><a href="{{ url('page', {'in_page_name': 'ministries'}) }}">Ministries</a></li>
+            <li><a href="{{ url('page', {'in_page_name': 'directions'}) }}">Directions</a></li>
+            <li><a href="{{ url('page', {'in_page_name': 'media'}) }}">Media</a></li>
             <li><a href="{{ url('directory') }}">Directory</a></li>
-            <li><a href="{{ url('directory_list') }}">List</a></li>
             {%  if is_granted('ROLE_USER') %}
                 <li><a href="{{ url('logout') }}">Logout
                         {{ app.security.getToken().getUser().getUsername() }}</a></li>

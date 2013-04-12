@@ -1,0 +1,12 @@
+{# Ecc12PRHomeBundle:Default:index.html.twig #}
+{% extends 'Ecc12PRHomeBundle::base.html.twig' %}
+
+{% block subtitle %}Page{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="span12">
+            {{ content|markdown }}
+        </div>
+    </div>
+{% endblock %}
