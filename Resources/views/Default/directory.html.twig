@@ -5,78 +5,88 @@
     {% set first_family = 1 %}
     {% for family_id,family in directory %}
 
-        {% if first_family %}
+        {% if first_family or mode == "list" %}
             {% set first_family = 0 %}
         {% else %}
             <hr />
         {% endif %}
 
-        <div class="row">
-            <div class="span12">
-                <h2>{{ family['name'] }} Family</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="span3">
-                {% if family['address_1'] and family['city'] and family['state'] %}
-                    {{ family['address_1'] }}<br />
-                    {% if family['address_2'] %}
-                        {{ family['address_2'] }}<br />
-                    {% endif %}
-                    {{ family['city'] }}, {{ family['state'] }}
-                    {% if family['zipcode'] %}
-                        {{ family['zipcode'] }}
-                    {% endif %}<br />
-                    <br />
-                {% endif %}
-            </div>
-            <div class="span9">
-                {% if family['phone'] %}
-                    Family Phone: {{ family['phone'] }}<br />
-                {% endif %}
-                {% if family['email'] %}
-                    Family Email: <a href="{{ family['email'] }}">{{ family['email'] }}</a><br />
-                {% endif %}
-            </div>
-        </div>
-        <div class="row">
-            {% set i = 0 %}
-            {% for person_id,person in family['people'] %}
+        {% if mode == "detail" %}
 
-                <div class="span3">
-
-                    <h4>
-                        {% if person['relationship'] == 'Child' %}
-                            <em>{{ person['first_name']|default('') }}
-                                {{ person['last_name']|default('') }}</em>
-                        {% else %}
-                            {{ person['first_name']|default('') }}
-                            {{ person['last_name']|default('') }}
-                        {% endif %}
-                    </h4>
-
-                    {% if person['phone'] %}
-                        Phone: {{ person['phone'] }}<br />
-                    {% endif %}
-                    {% if person['email'] %}
-                        Email: <a href="mailto:{{ person['email'] }}">{{ person['email'] }}</a><br />
-                    {% endif %}
-                    {% if person['birthday'] %}
-                        Birthday: {{ person['birthday']|date('M d') }}<br />
-                    {% endif %}
-                    {% if person['anniversary'] %}
-                        Anniversary: {{ person['anniversary']|date('M d') }}<br />
-                    {% endif %}
-
+            <div class="row">
+                <div class="span12">
+                    <h2><a href="{{ url('directory', {'in_family_id': family['id']}) }}">{{ family['name'] }} Family</a></h2>
                 </div>
-                {% set i = i + 1 %}
-                {% if i == 4 %}
-                    </div><div class="row">
-                    {% set i = 0 %}
-                {% endif %}
-            {% endfor %}
-        </div>
+            </div>
 
+
+            <div class="row">
+                <div class="span3">
+                    {% if family['address_1'] and family['city'] and family['state'] %}
+                        {{ family['address_1'] }}<br />
+                        {% if family['address_2'] %}
+                            {{ family['address_2'] }}<br />
+                        {% endif %}
+                        {{ family['city'] }}, {{ family['state'] }}
+                        {% if family['zipcode'] %}
+                            {{ family['zipcode'] }}
+                        {% endif %}<br />
+                        <br />
+                    {% endif %}
+                </div>
+                <div class="span9">
+                    {% if family['phone'] %}
+                        Family Phone: {{ family['phone'] }}<br />
+                    {% endif %}
+                    {% if family['email'] %}
+                        Family Email: <a href="{{ family['email'] }}">{{ family['email'] }}</a><br />
+                    {% endif %}
+                </div>
+            </div>
+            <div class="row">
+                {% set i = 0 %}
+                {% for person_id,person in family['people'] %}
+
+                    <div class="span3">
+
+                        <h4>
+                            {% if person['relationship'] == 'Child' %}
+                                <em>{{ person['first_name']|default('') }}
+                                    {{ person['last_name']|default('') }}</em>
+                            {% else %}
+                                {{ person['first_name']|default('') }}
+                                {{ person['last_name']|default('') }}
+                            {% endif %}
+                        </h4>
+
+                        {% if person['phone'] %}
+                            Phone: {{ person['phone'] }}<br />
+                        {% endif %}
+                        {% if person['email'] %}
+                            Email: <a href="mailto:{{ person['email'] }}">{{ person['email'] }}</a><br />
+                        {% endif %}
+                        {% if person['birthday'] %}
+                            Birthday: {{ person['birthday']|date('M d') }}<br />
+                        {% endif %}
+                        {% if person['anniversary'] %}
+                            Anniversary: {{ person['anniversary']|date('M d') }}<br />
+                        {% endif %}
+
+                    </div>
+                    {% set i = i + 1 %}
+                    {% if i == 4 %}
+                        </div><div class="row">
+                        {% set i = 0 %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+
+        {% else %}
+
+            <i class="icon-circle-arrow-right"></i> <a href="{{ url('directory_name', {'in_family_name': family['name']}) }}">
+                {{ family['name'] }} Family</a><br />
+
+        {% endif %}
     {% endfor %}
 {% endblock %}
 
