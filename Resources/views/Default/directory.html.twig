@@ -83,8 +83,8 @@
 
         {% else %}
 
-            <i class="icon-circle-arrow-right"></i> <a href="{{ url('directory_name', {'in_family_name': family['name']}) }}">
-                {{ family['name'] }} Family</a><br />
+            <i class="icon-circle-arrow-right"></i> <a href="{{ url('directory', {'in_family_id': family['id']}) }}">
+                {{ family['name'] }} Family</a> ({{ family['address_1']|default("no address listed") }})<br />
 
         {% endif %}
     {% endfor %}
