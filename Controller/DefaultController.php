@@ -8,8 +8,8 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Cache;
 use JMS\SecurityExtraBundle\Annotation\Secure;
-use Ecc12\PRHomeStoreBundle\Document\Family;
-use Ecc12\PRHomeStoreBundle\Document\Person;
+use Ecc12\PRHomeBundle\Document\Family;
+use Ecc12\PRHomeBundle\Document\Person;
 
 /**
  * Class DefaultController
@@ -82,17 +82,17 @@ class DefaultController extends Controller
         $dm = $this->get('doctrine.odm.mongodb.document_manager');
 
         if($in_family_id != -1) {
-            $families = $dm->createQueryBuilder('Ecc12PRHomeStoreBundle:Family')
+            $families = $dm->createQueryBuilder('Ecc12PRHomeBundle:Family')
                 ->field('id')->equals($in_family_id)
                 ->getQuery()
                 ->execute();
         } elseif($in_family_name != -1) {
-            $families = $dm->createQueryBuilder('Ecc12PRHomeStoreBundle:Family')
+            $families = $dm->createQueryBuilder('Ecc12PRHomeBundle:Family')
                 ->field('name')->equals($in_family_name)
                 ->getQuery()
                 ->execute();
         } else {
-            $families = $dm->createQueryBuilder('Ecc12PRHomeStoreBundle:Family')
+            $families = $dm->createQueryBuilder('Ecc12PRHomeBundle:Family')
                 ->sort('name', 'asc')
                 ->getQuery()
                 ->execute();
