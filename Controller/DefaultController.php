@@ -7,6 +7,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Cache;
+use JMS\SecurityExtraBundle\Annotation\Secure;
 use Ecc12\PRHomeStoreBundle\Document\Family;
 use Ecc12\PRHomeStoreBundle\Document\Person;
 
@@ -60,6 +61,8 @@ class DefaultController extends Controller
      *          "in_mode" = "detail"
      *      })
      * @Template()
+     * @Secure(roles="ROLE_USER")
+     * @Cache(expires="yesterday")
      */
     public function directoryAction($in_mode, $in_family_id, $in_family_name)
     {
