@@ -13,7 +13,7 @@ use Ecc12\PRHomeStoreBundle\Document\Person;
 
 /**
  * Class DefaultController
- * @Cache(expires="tomorrow")
+ * @Cache(expires="yesterday")
  */
 class DefaultController extends Controller
 {
@@ -62,7 +62,6 @@ class DefaultController extends Controller
      *      })
      * @Template()
      * @Secure(roles="ROLE_USER")
-     * @Cache(expires="yesterday")
      */
     public function directoryAction($in_mode, $in_family_id, $in_family_name)
     {
