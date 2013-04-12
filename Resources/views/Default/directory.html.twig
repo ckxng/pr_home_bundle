@@ -1,6 +1,8 @@
 {# Ecc12PRHomeBundle:Default:directory.html.twig #}
 {% extends 'Ecc12PRHomeBundle::base.html.twig' %}
 
+{% block subtitle %}Directory{% endblock %}
+
 {% block body %}
     {% set first_family = 1 %}
     {% for family_id,family in directory %}
