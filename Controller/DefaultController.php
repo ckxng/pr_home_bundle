@@ -39,12 +39,16 @@ class DefaultController extends Controller
      * @Template()
      */
     public function pageAction($in_page_name) {
+        $mode = "html";
         $content = "Page not found";
-        $filename = __DIR__."/../Resources/private/page/$in_page_name.md";
-        if(file_exists($filename)) {
-            $content = file_get_contents($filename);
+        $filename = __DIR__."/../Resources/private/page/$in_page_name";
+        foreach(array("md", "html", "txt") as $ext) {
+            if(file_exists("$filename.$ext")) {
+                $mode = $ext;
+                $content = file_get_contents("$filename.$ext");
+            }
         }
-        return array('content' => $content);
+        return array('content' => $content, 'mode' => $mode);
     }
 
     /**
