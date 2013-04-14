@@ -40,6 +40,7 @@ class DefaultController extends Controller
      */
     public function pageAction($in_page_name) {
         $mode = "html";
+        $title = $in_page_name;
         $content = "Page not found";
         $filename = __DIR__."/../Resources/private/page/$in_page_name";
         foreach(array("md", "html", "txt") as $ext) {
@@ -48,7 +49,10 @@ class DefaultController extends Controller
                 $content = file_get_contents("$filename.$ext");
             }
         }
-        return array('content' => $content, 'mode' => $mode);
+        if(file_exists("$filename.title")) {
+            $title=chop(file_get_contents("$filename.title"));
+        }
+        return array('content' => $content, 'title' => $title, 'mode' => $mode);
     }
 
     /**
