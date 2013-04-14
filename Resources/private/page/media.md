@@ -1,1 +1,0 @@
-<div align="center"><iframe width="640" height="385" src="http://cdn.livestream.com/embed/ckxng?layout=4&#038;color=0xe7e7e7&#038;autoPlay=false&#038;mute=false&#038;iconColorOver=0x888888&#038;iconColor=0x777777&#038;allowchat=true&#038;height=385&#038;width=640" style="border:0;outline:0" frameborder="0" scrolling="no"></iframe></div>
