@@ -12,7 +12,8 @@ class DirectoryFixtures implements FixtureInterface {
     public function load(ObjectManager $manager)
     {
         $xml = simplexml_load_file(__DIR__."/../../Resources/private/fixture/directory.xml");
-        $xml = json_decode(json_encode($xml),1)['directory'];
+        $xml = json_decode(json_encode($xml),1);
+        $xml = $xml['directory'];
         $dir = array();
 
         foreach($xml as $row)
