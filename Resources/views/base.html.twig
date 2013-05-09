@@ -25,6 +25,9 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    {% block extra_css %}{% endblock %}
+    {% block extra_head %}{% endblock %}
+
     <link rel="shortcut icon" href="favicon.ico">
 </head>
 
@@ -36,7 +39,7 @@
         <a class="brand" href="{{ url('index') }}">
             <i class="icon-home"></i> PR</a>
         <ul class="nav">
-            <li><a href="{{ url('page', {'in_page_name': 'ministries'}) }}">Ministries</a></li>
+            <li><a href="{{ url('page', {'in_page_name': 'youth_ministry'}) }}">Student Ministry</a></li>
             <li><a href="{{ url('page', {'in_page_name': 'directions'}) }}">Directions</a></li>
             <li><a href="{{ url('page', {'in_page_name': 'calendar'}) }}">Calendar</a></li>
             <li><a href="{{ url('page', {'in_page_name': 'media'}) }}">Media</a></li>
