@@ -18,6 +18,7 @@ use Ecc12\PRHomeBundle\Document\Person;
 class DefaultController extends Controller
 {
     /**
+     * @Route("/", name="index")
      * @Template()
      */
     public function indexAction()
@@ -34,7 +35,6 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/", name="index", defaults={"in_page_name" = "index"})
      * @Route("/page/{in_page_name}", name = "page", defaults={"in_page_name" = "index"})
      * @Template()
      */
