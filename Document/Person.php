@@ -1,5 +1,13 @@
 <?php
 
+/********************************************************************** 
+ * 
+ * CAUTION! 
+ * 
+ * This collection is overwritten by fixtures! 
+ * 
+ */
+
 namespace Ecc12\PRHomeBundle\Document;
 
 use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
