@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="directory.xsd" generated="2013-04-12T10:34:46">
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="directory.xsd" generated="2013-05-26T13:31:09">
 <directory>
 <people_ID>5</people_ID>
 <families_ID>3</families_ID>
@@ -72,6 +72,24 @@
 <birthday>2011-06-26T00:00:00</birthday>
 </directory>
 <directory>
+<people_ID>14</people_ID>
+<families_ID>7</families_ID>
+<family_name>Bell</family_name>
+<last_name>Bell</last_name>
+<first_name>Bryan</first_name>
+<person_type_name>Member</person_type_name>
+<relationship_type_name>Head</relationship_type_name>
+<sort>100</sort>
+<address_1>1613 England Rd</address_1>
+<city>Arlington</city>
+<state>TX</state>
+<zipcode>76013</zipcode>
+<country>USA</country>
+<people_phone>(817) 681-9257</people_phone>
+<people_email>bsmebell@gmail.com</people_email>
+<birthday>1900-05-19T00:00:00</birthday>
+</directory>
+<directory>
 <people_ID>12</people_ID>
 <families_ID>6</families_ID>
 <family_name>Bell</family_name>
@@ -89,22 +107,22 @@
 <birthday>1900-08-20T00:00:00</birthday>
 </directory>
 <directory>
-<people_ID>14</people_ID>
+<people_ID>15</people_ID>
 <families_ID>7</families_ID>
 <family_name>Bell</family_name>
 <last_name>Bell</last_name>
-<first_name>Bryan</first_name>
+<first_name>Sarah</first_name>
 <person_type_name>Member</person_type_name>
-<relationship_type_name>Head</relationship_type_name>
-<sort>100</sort>
+<relationship_type_name>Spouse</relationship_type_name>
+<sort>200</sort>
 <address_1>1613 England Rd</address_1>
 <city>Arlington</city>
 <state>TX</state>
 <zipcode>76013</zipcode>
 <country>USA</country>
-<people_phone>(817) 681-9257</people_phone>
-<people_email>bsmebell@gmail.com</people_email>
-<birthday>1900-05-19T00:00:00</birthday>
+<people_phone>(817) 681-9615</people_phone>
+<people_email>sarah_nicole_wood@yahoo.com</people_email>
+<birthday>1900-12-30T00:00:00</birthday>
 </directory>
 <directory>
 <people_ID>11</people_ID>
@@ -124,22 +142,36 @@
 <birthday>1900-03-02T00:00:00</birthday>
 </directory>
 <directory>
-<people_ID>15</people_ID>
+<people_ID>16</people_ID>
 <families_ID>7</families_ID>
 <family_name>Bell</family_name>
 <last_name>Bell</last_name>
-<first_name>Sarah</first_name>
-<person_type_name>Member</person_type_name>
-<relationship_type_name>Spouse</relationship_type_name>
-<sort>200</sort>
+<first_name>Micah</first_name>
+<person_type_name>Child</person_type_name>
+<relationship_type_name>Child</relationship_type_name>
+<sort>700</sort>
 <address_1>1613 England Rd</address_1>
 <city>Arlington</city>
 <state>TX</state>
 <zipcode>76013</zipcode>
 <country>USA</country>
-<people_phone>(817) 681-9615</people_phone>
-<people_email>sarah_nicole_wood@yahoo.com</people_email>
-<birthday>1900-12-30T00:00:00</birthday>
+<birthday>2011-07-14T00:00:00</birthday>
+</directory>
+<directory>
+<people_ID>17</people_ID>
+<families_ID>7</families_ID>
+<family_name>Bell</family_name>
+<last_name>Bell</last_name>
+<first_name>Eisley</first_name>
+<person_type_name>Child</person_type_name>
+<relationship_type_name>Child</relationship_type_name>
+<sort>700</sort>
+<address_1>1613 England Rd</address_1>
+<city>Arlington</city>
+<state>TX</state>
+<zipcode>76013</zipcode>
+<country>USA</country>
+<birthday>2012-06-19T00:00:00</birthday>
 </directory>
 <directory>
 <people_ID>10</people_ID>
@@ -176,38 +208,6 @@
 <birthday>1900-10-29T00:00:00</birthday>
 </directory>
 <directory>
-<people_ID>16</people_ID>
-<families_ID>7</families_ID>
-<family_name>Bell</family_name>
-<last_name>Bell</last_name>
-<first_name>Micah</first_name>
-<person_type_name>Child</person_type_name>
-<relationship_type_name>Child</relationship_type_name>
-<sort>700</sort>
-<address_1>1613 England Rd</address_1>
-<city>Arlington</city>
-<state>TX</state>
-<zipcode>76013</zipcode>
-<country>USA</country>
-<birthday>2011-07-14T00:00:00</birthday>
-</directory>
-<directory>
-<people_ID>17</people_ID>
-<families_ID>7</families_ID>
-<family_name>Bell</family_name>
-<last_name>Bell</last_name>
-<first_name>Eisley</first_name>
-<person_type_name>Child</person_type_name>
-<relationship_type_name>Child</relationship_type_name>
-<sort>700</sort>
-<address_1>1613 England Rd</address_1>
-<city>Arlington</city>
-<state>TX</state>
-<zipcode>76013</zipcode>
-<country>USA</country>
-<birthday>2012-06-19T00:00:00</birthday>
-</directory>
-<directory>
 <people_ID>18</people_ID>
 <families_ID>8</families_ID>
 <family_name>Belt</family_name>
@@ -222,6 +222,25 @@
 <zipcode>75228</zipcode>
 <country>USA</country>
 <families_email>beltkt@gmail.com</families_email>
+<birthday>1900-11-20T00:00:00</birthday>
+</directory>
+<directory>
+<people_ID>211</people_ID>
+<families_ID>122</families_ID>
+<family_name>Blackburn</family_name>
+<last_name>Blackburn</last_name>
+<first_name>Donny</first_name>
+<person_type_name>Member</person_type_name>
+<relationship_type_name>Head</relationship_type_name>
+<sort>100</sort>
+<address_1>350 N. Ervay</address_1>
+<address_2>#1905</address_2>
+<city>Dallas</city>
+<state>TX</state>
+<zipcode>75201</zipcode>
+<country>USA</country>
+<families_email>don@blackburn.net</families_email>
+<families_phone>(214) 762-6159</families_phone>
 </directory>
 <directory>
 <people_ID>19</people_ID>
@@ -240,6 +259,40 @@
 <families_phone>(817) 277-1421</families_phone>
 <people_phone>(817) 881-9641</people_phone>
 <birthday>1900-10-04T00:00:00</birthday>
+</directory>
+<directory>
+<people_ID>192</people_ID>
+<families_ID>104</families_ID>
+<family_name>Blackwell</family_name>
+<last_name>Blackwell</last_name>
+<first_name>Brandi</first_name>
+<person_type_name>Member</person_type_name>
+<relationship_type_name>Head</relationship_type_name>
+<sort>100</sort>
+<address_1>2110 Ferndale Ln</address_1>
+<city>Arlington</city>
+<state>TX</state>
+<zipcode>76006</zipcode>
+<country>USA</country>
+<families_email>brandiblackwell86@gmail.com</families_email>
+<families_phone>(817) 730-3783</families_phone>
+</directory>
+<directory>
+<people_ID>193</people_ID>
+<families_ID>104</families_ID>
+<family_name>Blackwell</family_name>
+<last_name>Blackwell</last_name>
+<first_name>Elizabeth</first_name>
+<person_type_name>Child</person_type_name>
+<relationship_type_name>Child</relationship_type_name>
+<sort>700</sort>
+<address_1>2110 Ferndale Ln</address_1>
+<city>Arlington</city>
+<state>TX</state>
+<zipcode>76006</zipcode>
+<country>USA</country>
+<families_email>brandiblackwell86@gmail.com</families_email>
+<families_phone>(817) 730-3783</families_phone>
 </directory>
 <directory>
 <people_ID>20</people_ID>
@@ -447,23 +500,6 @@
 <birthday>1900-11-23T00:00:00</birthday>
 </directory>
 <directory>
-<people_ID>33</people_ID>
-<families_ID>14</families_ID>
-<family_name>Cambron</family_name>
-<last_name>Cambron</last_name>
-<first_name>Gray</first_name>
-<person_type_name>Child</person_type_name>
-<relationship_type_name>Child</relationship_type_name>
-<sort>700</sort>
-<address_1>2009 Elmhurst Dr.</address_1>
-<city>Arlington</city>
-<state>TX</state>
-<zipcode>76012</zipcode>
-<country>USA</country>
-<families_phone>(817) 275-3544</families_phone>
-<birthday>2010-12-17T00:00:00</birthday>
-</directory>
-<directory>
 <people_ID>32</people_ID>
 <families_ID>14</families_ID>
 <family_name>Cambron</family_name>
@@ -479,6 +515,23 @@
 <country>USA</country>
 <families_phone>(817) 275-3544</families_phone>
 <birthday>2009-07-25T00:00:00</birthday>
+</directory>
+<directory>
+<people_ID>33</people_ID>
+<families_ID>14</families_ID>
+<family_name>Cambron</family_name>
+<last_name>Cambron</last_name>
+<first_name>Gray</first_name>
+<person_type_name>Child</person_type_name>
+<relationship_type_name>Child</relationship_type_name>
+<sort>700</sort>
+<address_1>2009 Elmhurst Dr.</address_1>
+<city>Arlington</city>
+<state>TX</state>
+<zipcode>76012</zipcode>
+<country>USA</country>
+<families_phone>(817) 275-3544</families_phone>
+<birthday>2010-12-17T00:00:00</birthday>
 </directory>
 <directory>
 <people_ID>34</people_ID>
@@ -553,24 +606,6 @@
 <families_phone>(817) 459-8446</families_phone>
 <people_phone>(817) 939-3882</people_phone>
 <birthday>1900-03-28T00:00:00</birthday>
-</directory>
-<directory>
-<people_ID>38</people_ID>
-<families_ID>17</families_ID>
-<family_name>Cochrum</family_name>
-<last_name>Cochrum</last_name>
-<first_name>Blair</first_name>
-<person_type_name>Member</person_type_name>
-<relationship_type_name>Head</relationship_type_name>
-<sort>100</sort>
-<address_1>1316 Redbud Dr.</address_1>
-<city>Arlington</city>
-<state>TX</state>
-<zipcode>76012</zipcode>
-<country>USA</country>
-<families_email>bcochrum@hotmail.com</families_email>
-<families_phone>(817) 795-8929</families_phone>
-<birthday>1900-10-08T00:00:00</birthday>
 </directory>
 <directory>
 <people_ID>39</people_ID>
@@ -824,7 +859,7 @@
 <zipcode>76012</zipcode>
 <country>USA</country>
 <families_email>vaudadowdey@me.com</families_email>
-<families_phone>(817) 261-5089</families_phone>
+<families_phone>(817) 462-5477</families_phone>
 <birthday>1900-09-15T00:00:00</birthday>
 </directory>
 <directory>
@@ -917,24 +952,6 @@
 <families_phone>(817) 861-9071</families_phone>
 <people_email>mildrededgar@sbcglobal.net</people_email>
 <birthday>1900-01-22T00:00:00</birthday>
-</directory>
-<directory>
-<people_ID>58</people_ID>
-<families_ID>30</families_ID>
-<family_name>Evans</family_name>
-<last_name>Evans</last_name>
-<first_name>John</first_name>
-<person_type_name>Member</person_type_name>
-<relationship_type_name>Head</relationship_type_name>
-<sort>100</sort>
-<address_1>1528 Stoneleigh Ct</address_1>
-<address_2>Apt 2035</address_2>
-<city>Arlington</city>
-<state>TX</state>
-<zipcode>76011</zipcode>
-<country>USA</country>
-<families_phone>(817) 706-8039</families_phone>
-<birthday>1900-02-08T00:00:00</birthday>
 </directory>
 <directory>
 <people_ID>59</people_ID>
@@ -1309,25 +1326,6 @@
 <birthday>1900-07-16T00:00:00</birthday>
 </directory>
 <directory>
-<people_ID>1</people_ID>
-<families_ID>2</families_ID>
-<family_name>King</family_name>
-<last_name>King</last_name>
-<first_name>Cameron</first_name>
-<person_type_name>Member</person_type_name>
-<relationship_type_name>Head</relationship_type_name>
-<sort>100</sort>
-<address_1>1300 Raines St</address_1>
-<city>Arlington</city>
-<state>TX</state>
-<zipcode>76010</zipcode>
-<country>USA</country>
-<people_phone>(682) 999-0991</people_phone>
-<people_email>cking@ckxng.com</people_email>
-<birthday>1986-07-14T00:00:00</birthday>
-<anniversary>2005-12-31T00:00:00</anniversary>
-</directory>
-<directory>
 <people_ID>2</people_ID>
 <families_ID>2</families_ID>
 <family_name>King</family_name>
@@ -1387,30 +1385,13 @@
 <person_type_name>Member</person_type_name>
 <relationship_type_name>Head</relationship_type_name>
 <sort>100</sort>
-<address_1>2814 Norwood Ln</address_1>
+<address_1>2202 Sapphire Dr</address_1>
 <city>Arlington</city>
 <state>TX</state>
-<zipcode>76013</zipcode>
+<zipcode>76017</zipcode>
 <country>USA</country>
 <families_phone>(817) 277-8806</families_phone>
 <birthday>1900-07-08T00:00:00</birthday>
-</directory>
-<directory>
-<people_ID>82</people_ID>
-<families_ID>47</families_ID>
-<family_name>Kirk</family_name>
-<last_name>Kirk</last_name>
-<first_name>Taylor</first_name>
-<person_type_name>Child</person_type_name>
-<relationship_type_name>Child</relationship_type_name>
-<sort>700</sort>
-<address_1>2814 Norwood Ln</address_1>
-<city>Arlington</city>
-<state>TX</state>
-<zipcode>76013</zipcode>
-<country>USA</country>
-<families_phone>(817) 277-8806</families_phone>
-<birthday>1900-07-26T00:00:00</birthday>
 </directory>
 <directory>
 <people_ID>80</people_ID>
@@ -1421,13 +1402,30 @@
 <person_type_name>Child</person_type_name>
 <relationship_type_name>Child</relationship_type_name>
 <sort>700</sort>
-<address_1>2814 Norwood Ln</address_1>
+<address_1>2202 Sapphire Dr</address_1>
 <city>Arlington</city>
 <state>TX</state>
-<zipcode>76013</zipcode>
+<zipcode>76017</zipcode>
 <country>USA</country>
 <families_phone>(817) 277-8806</families_phone>
 <birthday>1900-08-31T00:00:00</birthday>
+</directory>
+<directory>
+<people_ID>82</people_ID>
+<families_ID>47</families_ID>
+<family_name>Kirk</family_name>
+<last_name>Kirk</last_name>
+<first_name>Taylor</first_name>
+<person_type_name>Child</person_type_name>
+<relationship_type_name>Child</relationship_type_name>
+<sort>700</sort>
+<address_1>2202 Sapphire Dr</address_1>
+<city>Arlington</city>
+<state>TX</state>
+<zipcode>76017</zipcode>
+<country>USA</country>
+<families_phone>(817) 277-8806</families_phone>
+<birthday>1900-07-26T00:00:00</birthday>
 </directory>
 <directory>
 <people_ID>83</people_ID>
@@ -1531,7 +1529,7 @@
 <state>TX</state>
 <zipcode>76063</zipcode>
 <country>USA</country>
-<families_phone>(469) 939-4502</families_phone>
+<families_phone>(817) 477-3519</families_phone>
 <people_phone>(469) 939-4502</people_phone>
 <people_email>bob.mccluney@lmco.com</people_email>
 <birthday>1900-02-13T00:00:00</birthday>
@@ -1550,7 +1548,7 @@
 <state>TX</state>
 <zipcode>76063</zipcode>
 <country>USA</country>
-<families_phone>(469) 939-4502</families_phone>
+<families_phone>(817) 477-3519</families_phone>
 <people_phone>(817) 319-6945</people_phone>
 <people_email>rdjmmccluney5@aol.com</people_email>
 <birthday>1900-05-14T00:00:00</birthday>
@@ -1663,23 +1661,6 @@
 <birthday>1900-10-06T00:00:00</birthday>
 </directory>
 <directory>
-<people_ID>95</people_ID>
-<families_ID>57</families_ID>
-<family_name>Moore</family_name>
-<last_name>Moore</last_name>
-<first_name>Chelsea</first_name>
-<person_type_name>Child</person_type_name>
-<relationship_type_name>Child</relationship_type_name>
-<sort>700</sort>
-<address_1>811 Waggoner Dr.</address_1>
-<city>Arlington</city>
-<state>TX</state>
-<zipcode>76013</zipcode>
-<country>USA</country>
-<people_phone>(817) 808-3130</people_phone>
-<birthday>1900-05-12T00:00:00</birthday>
-</directory>
-<directory>
 <people_ID>94</people_ID>
 <families_ID>57</families_ID>
 <family_name>Moore</family_name>
@@ -1695,6 +1676,23 @@
 <country>USA</country>
 <people_phone>(817) 881-9589</people_phone>
 <birthday>1900-06-19T00:00:00</birthday>
+</directory>
+<directory>
+<people_ID>95</people_ID>
+<families_ID>57</families_ID>
+<family_name>Moore</family_name>
+<last_name>Moore</last_name>
+<first_name>Chelsea</first_name>
+<person_type_name>Child</person_type_name>
+<relationship_type_name>Child</relationship_type_name>
+<sort>700</sort>
+<address_1>811 Waggoner Dr.</address_1>
+<city>Arlington</city>
+<state>TX</state>
+<zipcode>76013</zipcode>
+<country>USA</country>
+<people_phone>(817) 808-3130</people_phone>
+<birthday>1900-05-12T00:00:00</birthday>
 </directory>
 <directory>
 <people_ID>98</people_ID>
@@ -1749,6 +1747,7 @@
 <country>USA</country>
 <people_phone>(682) 438-6342</people_phone>
 <people_email>erictexnelson@gmail.com</people_email>
+<birthday>1900-05-03T00:00:00</birthday>
 </directory>
 <directory>
 <people_ID>100</people_ID>
@@ -1836,25 +1835,6 @@
 <country>USA</country>
 <families_email>arlfoster@aol.com</families_email>
 <people_phone>(817) 457-8063</people_phone>
-</directory>
-<directory>
-<people_ID>106</people_ID>
-<families_ID>61</families_ID>
-<family_name>Pendley</family_name>
-<last_name>Pendley</last_name>
-<first_name>Alma</first_name>
-<person_type_name>Member</person_type_name>
-<relationship_type_name>Head</relationship_type_name>
-<sort>100</sort>
-<address_1>Broadway Plaza 915 N Fielder Rd</address_1>
-<address_2>Apt 3106</address_2>
-<city>Arlington</city>
-<state>TX</state>
-<zipcode>76012</zipcode>
-<country>USA</country>
-<families_phone>(214) 808-1268</families_phone>
-<people_phone>(214) 808-1268</people_phone>
-<birthday>1900-10-29T00:00:00</birthday>
 </directory>
 <directory>
 <people_ID>108</people_ID>
@@ -2000,23 +1980,6 @@
 <birthday>1900-07-24T00:00:00</birthday>
 </directory>
 <directory>
-<people_ID>117</people_ID>
-<families_ID>65</families_ID>
-<family_name>Ray</family_name>
-<last_name>Ray</last_name>
-<first_name>Lindsay</first_name>
-<person_type_name>Child</person_type_name>
-<relationship_type_name>Child</relationship_type_name>
-<sort>700</sort>
-<address_1>1307 Grayhawk Dr.</address_1>
-<city>Mansfield</city>
-<state>TX</state>
-<zipcode>76063</zipcode>
-<country>USA</country>
-<people_phone>(682) 552-6817</people_phone>
-<birthday>1900-12-26T00:00:00</birthday>
-</directory>
-<directory>
 <people_ID>114</people_ID>
 <families_ID>65</families_ID>
 <family_name>Ray</family_name>
@@ -2033,6 +1996,23 @@
 <people_phone>(682) 227-0074</people_phone>
 <people_email>em.ray2013@gmail.com</people_email>
 <birthday>1900-02-23T00:00:00</birthday>
+</directory>
+<directory>
+<people_ID>117</people_ID>
+<families_ID>65</families_ID>
+<family_name>Ray</family_name>
+<last_name>Ray</last_name>
+<first_name>Lindsay</first_name>
+<person_type_name>Child</person_type_name>
+<relationship_type_name>Child</relationship_type_name>
+<sort>700</sort>
+<address_1>1307 Grayhawk Dr.</address_1>
+<city>Mansfield</city>
+<state>TX</state>
+<zipcode>76063</zipcode>
+<country>USA</country>
+<people_phone>(682) 552-6817</people_phone>
+<birthday>1900-12-26T00:00:00</birthday>
 </directory>
 <directory>
 <people_ID>113</people_ID>
@@ -2350,22 +2330,6 @@
 <birthday>1900-06-09T00:00:00</birthday>
 </directory>
 <directory>
-<people_ID>133</people_ID>
-<families_ID>74</families_ID>
-<family_name>Santiago</family_name>
-<last_name>Santiago</last_name>
-<first_name>Ben</first_name>
-<person_type_name>Child</person_type_name>
-<relationship_type_name>Child</relationship_type_name>
-<sort>700</sort>
-<address_1>1205 W. Lilly Ln</address_1>
-<city>Arlington</city>
-<state>TX</state>
-<zipcode>76013</zipcode>
-<country>USA</country>
-<birthday>1900-10-12T00:00:00</birthday>
-</directory>
-<directory>
 <people_ID>134</people_ID>
 <families_ID>74</families_ID>
 <family_name>Santiago</family_name>
@@ -2380,6 +2344,22 @@
 <zipcode>76013</zipcode>
 <country>USA</country>
 <birthday>1900-06-04T00:00:00</birthday>
+</directory>
+<directory>
+<people_ID>133</people_ID>
+<families_ID>74</families_ID>
+<family_name>Santiago</family_name>
+<last_name>Santiago</last_name>
+<first_name>Ben</first_name>
+<person_type_name>Child</person_type_name>
+<relationship_type_name>Child</relationship_type_name>
+<sort>700</sort>
+<address_1>1205 W. Lilly Ln</address_1>
+<city>Arlington</city>
+<state>TX</state>
+<zipcode>76013</zipcode>
+<country>USA</country>
+<birthday>1900-10-12T00:00:00</birthday>
 </directory>
 <directory>
 <people_ID>137</people_ID>
@@ -2502,6 +2482,8 @@
 <country>USA</country>
 <families_phone>(817) 832-9542</families_phone>
 <people_phone>(817) 832-9542</people_phone>
+<birthday>1942-09-05T00:00:00</birthday>
+<anniversary>1963-02-01T00:00:00</anniversary>
 </directory>
 <directory>
 <people_ID>144</people_ID>
@@ -2519,24 +2501,8 @@
 <country>USA</country>
 <families_phone>(817) 832-9542</families_phone>
 <people_phone>(817) 366-6742</people_phone>
-</directory>
-<directory>
-<people_ID>145</people_ID>
-<families_ID>81</families_ID>
-<family_name>Tappe</family_name>
-<last_name>Tappe</last_name>
-<first_name>Allen</first_name>
-<person_type_name>Member</person_type_name>
-<relationship_type_name>Head</relationship_type_name>
-<sort>100</sort>
-<address_1>1805 Mossy Oak St</address_1>
-<city>Arlington</city>
-<state>TX</state>
-<zipcode>76012</zipcode>
-<country>USA</country>
-<people_phone>(817) 706-4186</people_phone>
-<people_email>allen@tappegroup.com</people_email>
-<birthday>1900-07-23T00:00:00</birthday>
+<birthday>1900-06-07T00:00:00</birthday>
+<anniversary>1963-02-01T00:00:00</anniversary>
 </directory>
 <directory>
 <people_ID>147</people_ID>
@@ -2555,6 +2521,24 @@
 <people_phone>(972) 740-9008</people_phone>
 <people_email>craigtappe@yahoo.com</people_email>
 <birthday>1959-10-27T00:00:00</birthday>
+</directory>
+<directory>
+<people_ID>145</people_ID>
+<families_ID>81</families_ID>
+<family_name>Tappe</family_name>
+<last_name>Tappe</last_name>
+<first_name>Allen</first_name>
+<person_type_name>Member</person_type_name>
+<relationship_type_name>Head</relationship_type_name>
+<sort>100</sort>
+<address_1>1805 Mossy Oak St</address_1>
+<city>Arlington</city>
+<state>TX</state>
+<zipcode>76012</zipcode>
+<country>USA</country>
+<people_phone>(817) 706-4186</people_phone>
+<people_email>allen@tappegroup.com</people_email>
+<birthday>1900-07-23T00:00:00</birthday>
 </directory>
 <directory>
 <people_ID>146</people_ID>
@@ -2717,6 +2701,23 @@
 <birthday>1900-12-20T00:00:00</birthday>
 </directory>
 <directory>
+<people_ID>157</people_ID>
+<families_ID>85</families_ID>
+<family_name>Turano</family_name>
+<last_name>Turano</last_name>
+<first_name>Tony</first_name>
+<person_type_name>Child</person_type_name>
+<relationship_type_name>Child</relationship_type_name>
+<sort>700</sort>
+<address_1>4208 Ravenhill Ln</address_1>
+<city>Arlington</city>
+<state>TX</state>
+<zipcode>76016</zipcode>
+<country>USA</country>
+<people_phone>(817) 793-4328</people_phone>
+<birthday>1900-01-09T00:00:00</birthday>
+</directory>
+<directory>
 <people_ID>153</people_ID>
 <families_ID>85</families_ID>
 <family_name>Turano</family_name>
@@ -2733,23 +2734,6 @@
 <people_phone>(682) 203-1683</people_phone>
 <people_email>daniturano466@gmail.com</people_email>
 <birthday>1900-12-29T00:00:00</birthday>
-</directory>
-<directory>
-<people_ID>157</people_ID>
-<families_ID>85</families_ID>
-<family_name>Turano</family_name>
-<last_name>Turano</last_name>
-<first_name>Tony</first_name>
-<person_type_name>Child</person_type_name>
-<relationship_type_name>Child</relationship_type_name>
-<sort>700</sort>
-<address_1>4208 Ravenhill Ln</address_1>
-<city>Arlington</city>
-<state>TX</state>
-<zipcode>76016</zipcode>
-<country>USA</country>
-<people_phone>(817) 793-4328</people_phone>
-<birthday>1900-01-09T00:00:00</birthday>
 </directory>
 <directory>
 <people_ID>158</people_ID>
@@ -2874,23 +2858,6 @@
 <people_phone>(817) 275-8843</people_phone>
 <people_email>bushidofightteam@yahoo.com</people_email>
 <birthday>1900-03-09T00:00:00</birthday>
-</directory>
-<directory>
-<people_ID>165</people_ID>
-<families_ID>89</families_ID>
-<family_name>Westover</family_name>
-<last_name>Westover</last_name>
-<first_name>Brenda</first_name>
-<person_type_name>Member</person_type_name>
-<relationship_type_name>Head</relationship_type_name>
-<sort>100</sort>
-<address_1>520 W. Lovers Ln</address_1>
-<city>Arlington</city>
-<state>TX</state>
-<zipcode>76010</zipcode>
-<country>USA</country>
-<families_email>b.westover@hotmail.com</families_email>
-<families_phone>(817) 913-3918</families_phone>
 </directory>
 <directory>
 <people_ID>166</people_ID>
@@ -3019,24 +2986,6 @@
 <birthday>2008-06-15T00:00:00</birthday>
 </directory>
 <directory>
-<people_ID>174</people_ID>
-<families_ID>95</families_ID>
-<family_name>Zimmerman</family_name>
-<last_name>Zimmerman</last_name>
-<first_name>Dot</first_name>
-<person_type_name>Member</person_type_name>
-<relationship_type_name>Head</relationship_type_name>
-<sort>100</sort>
-<address_1>1510 Darlene Ln</address_1>
-<city>Arlington</city>
-<state>TX</state>
-<zipcode>76010</zipcode>
-<country>USA</country>
-<families_email>jwda66zim@att.net</families_email>
-<families_phone>(817) 275-2016</families_phone>
-<birthday>1900-12-12T00:00:00</birthday>
-</directory>
-<directory>
 <people_ID>177</people_ID>
 <families_ID>94</families_ID>
 <family_name>Zimmerman</family_name>
@@ -3053,6 +3002,24 @@
 <families_email>tbzimmer@sbcglobal.net</families_email>
 <people_phone>(817) 929-7521</people_phone>
 <birthday>1900-10-25T00:00:00</birthday>
+</directory>
+<directory>
+<people_ID>174</people_ID>
+<families_ID>95</families_ID>
+<family_name>Zimmerman</family_name>
+<last_name>Zimmerman</last_name>
+<first_name>Dot</first_name>
+<person_type_name>Member</person_type_name>
+<relationship_type_name>Head</relationship_type_name>
+<sort>100</sort>
+<address_1>1510 Darlene Ln</address_1>
+<city>Arlington</city>
+<state>TX</state>
+<zipcode>76010</zipcode>
+<country>USA</country>
+<families_email>jwda66zim@att.net</families_email>
+<families_phone>(817) 275-2016</families_phone>
+<birthday>1900-12-12T00:00:00</birthday>
 </directory>
 <directory>
 <people_ID>173</people_ID>
@@ -3073,11 +3040,11 @@
 <birthday>1900-03-30T00:00:00</birthday>
 </directory>
 <directory>
-<people_ID>175</people_ID>
+<people_ID>176</people_ID>
 <families_ID>94</families_ID>
 <family_name>Zimmerman</family_name>
 <last_name>Zimmerman</last_name>
-<first_name>Doug</first_name>
+<first_name>Kate</first_name>
 <person_type_name>Child</person_type_name>
 <relationship_type_name>Child</relationship_type_name>
 <sort>700</sort>
@@ -3090,11 +3057,11 @@
 <birthday>1900-03-31T00:00:00</birthday>
 </directory>
 <directory>
-<people_ID>176</people_ID>
+<people_ID>175</people_ID>
 <families_ID>94</families_ID>
 <family_name>Zimmerman</family_name>
 <last_name>Zimmerman</last_name>
-<first_name>Kate</first_name>
+<first_name>Doug</first_name>
 <person_type_name>Child</person_type_name>
 <relationship_type_name>Child</relationship_type_name>
 <sort>700</sort>
