@@ -9,6 +9,14 @@ faces painted!  Our Trunk or Treat event is a safe, supervised event that the
 whole family can participate in.  Come dressed in costume and enjoy a family
 night out with us.
 
+We will have several (FREE!) food options:
+- hamburgers
+- hot dogs
+- chips
+- soda
+- desserts
+- and of course CANDY CANDY CANDY!
+
 Examples of fun costume themes for your family:
 
 - Superheros (the more original the better!)
