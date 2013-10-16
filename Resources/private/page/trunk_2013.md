@@ -18,6 +18,9 @@ Examples of fun costume themes for your family:
 - Celebrity look-alikes
 - ... get creative with it!
 
+Questions?  Call the church office at 817-277-1333 or email us at <a
+href="mailto:prchurch@parkrow.net">prchurch@parkrow.net</a>.
+
 ### Bringing a trunk?
 
 - Please arrive between 4:00pm - 4:30pm
