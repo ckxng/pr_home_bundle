@@ -10,6 +10,7 @@ whole family can participate in.  Come dressed in costume and enjoy a family
 night out with us.
 
 We will have several (FREE!) food options:
+
 - hamburgers
 - hot dogs
 - chips
